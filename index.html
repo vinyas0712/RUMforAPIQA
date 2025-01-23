@@ -14,6 +14,12 @@
   <!-- <script type="application/javascript" src="rprofiler.js"></script> -->
   <!-- <script type="application/javascript" src="rprofilersdsdsd.js"></script> -->
   <script language="javascript" type="text/javascript">
+    function init() {
+        window.RProfiler.addInfo('tracepoint', 'index', 'indexhtml');
+    }
+    window.RProfiler ? init() : window.addEventListener("GlimpseLoaded", init);
+    </script>
+  <script language="javascript" type="text/javascript">
    function init() { window.RProfiler.addInfo('variation', 'token1'); }
     window.RProfiler ? init() : window.addEventListener("GlimpseLoaded", init);
   </script>
