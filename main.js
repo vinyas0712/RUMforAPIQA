@@ -23,8 +23,12 @@ button.addEventListener('click', function() {
 
 
 function jsErrorFunc() {
-	console.log('function called')
-	throw new Error('test error');
+	//console.log('function called')
+	//throw new Error('test error');
+
+    //syntax error 
+	var x=10
+    console.log(x);
 };
 
 
