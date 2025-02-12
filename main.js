@@ -27,8 +27,7 @@ function jsErrorFunc() {
 	//throw new Error('test error');
 
     //syntax error 
-	var x=10
-    console.log(x);
+	eval('var x = ;'); 
 };
 
 
